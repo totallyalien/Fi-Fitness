@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color:#0a0a0a ;
+}
+#leftnav{
+    width: 18%;
+    background-color: #1b1b1b;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% ;
+
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+#rightBody{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: #0a0a0a;
+}
+
+#leftnav_bottom{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.leftcontent{
+    display: flex;
+    width: 75%;
+    height:80%;
+}
+
+#ccc{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200%;
+}
+
+
+/* hghjghjgyjhghjg */
+
+#rightBody_left{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightBody_right{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#rightBody_right_context{
+    height: 98%;
+    width: 100%;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    margin: 2%;
+    
+
+}
+
+#rightBody_left_context{
+    height: 98%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+#rightBody_left_context_top{
+    height: 40%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+#rightBody_left_context_middle{
+    height: 28%;
+    width: 100%;
+    background-color: rebeccapurple;
+    border-radius: 30px;
+
+}
+#rightBody_left_context_bottom{
+    height: 30%;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 30px;
+}
+
+
+
+#time{
+    background-color: #E6DFF1;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 1%;
+    
+}
+
+#distance{
+    background-color: #C0DED0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+#energy{
+    background-color: #F1DfDE;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+#sleep{
+    background-color: #E6Dff1;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+.fourbox{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+i{
+    font-size: 180%;
+}
+
+.icon_text{
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.data{
+    font-size: 150%;
+    font-weight: bold;
+}
+
