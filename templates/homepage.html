@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/homepage.css">
+    <link rel= "stylesheet" type= "text/css" href= "/static/homepage.css">
+    <title>Document</title>
+    
+
 </head>
+
 <body>
     <div id="leftnav">
         <div id="leftnav_top">
@@ -20,14 +24,12 @@
             <a href="#"><i class="fa-solid fa-house"></i> Overview</a>
             </div>
             <div class="leftcontent">
-        <a href="#"><i class="fa-solid fa-clock"></i> Timer</a>
+        <a href="timer"><i class="fa-solid fa-clock"></i> Timer</a>
         </div>
         <div class="leftcontent">
-        <a href="#"><i class="fa-solid fa-map"></i> Distances</a>
+        <a href="detailed"><i class="fa-solid fa-chart-area"></i> Detailed</a>
         </div>
-        <div class="leftcontent">
-        <a href="#"><i class="fa-solid fa-fire"></i> Energy</a>
-        </div>
+     
         </div>
 
         </div>
@@ -43,31 +45,45 @@
         <div id="rightBody_left">
           
             <div id="rightBody_left_context">
+                <div id="rightrightBody_left_context_top_name">
+                    <div id="name_logo"><div id="name">
+                       Hi , {{data[4]}}
+                    </div>
+                    <div id="photo"><img src={{data[5]}}></div>
+                </div>
+                </div>
                 <div id="rightBody_left_context_top">
                     <div class="fourbox">
                         <div class="time" id="time">
-                            <div class="icon"><i class="fa-solid fa-clock"></i></div>
-                            <div class="icon_text">Time</div>
-                            <div class="data">56<span>m</span></div>
+                            <div class="icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                            <div class="icon_text">Steps</div>
+                            <div class="data">{{data[0]}}<span>Steps</span></div>
                     </div>
                     <div class="time" id="distance">
                         <div class="icon"><i class="fa-solid fa-map"></i></div>
                         <div class="icon_text">Total Distance</div>
-                        <div class="data">5<span>Km</span></div>
+                        <div class="data">{{data[1]}}<span>Km</span></div>
                     </div></div>
                     <div class="fourbox" >
                          <div class="time" id="energy">  
                             <div class="icon"><i class="fa-solid fa-fire"></i> </div>
                             <div class="icon_text">Energy Burn</div>
-                            <div class="data">256<span>Kal</span></div></div>
+                            <div class="data">{{data[2]}}<span>Kal</span></div></div>
                     <div class="time" id="sleep"> 
-                         <div class="icon"><i class="fa-solid fa-bed"></i></div>
-                         <div class="icon_text">Sleep</div>
-                            <div class="data">56<span>m</span></div></div></div>
+                         <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                         <div class="icon_text">Heart</div>
+                            <div class="data">{{data[3]}}<span> Points</span></div></div></div>
                    
                 </div>
-                <div id="rightBody_left_context_middle">4</div>
-                <div id="rightBody_left_context_bottom"></div>
+                <div id="rightBody_left_context_middle">
+                    <div id="bottom_nav">
+                        <form id="forms" method="POST">
+                        <div class="nav_tab"><button value=0 name="days">TODAY</button></div>
+                        <div class="nav_tab"><button value=1 name="days">LAST 7 DAYS</button></div>
+                        <div class="nav_tab"><button value=2 name="days">LAST 30 DAYS</button></div>
+                    </form>
+                    </div>
+                </div>
             </div>
 
 
@@ -76,9 +92,9 @@
 
 
 
-        <div id="rightBody_right">
+        <!-- <div id="rightBody_right">
             <div id="rightBody_right_context"></div>
-        </div>
+        </div> -->
 
 
     </div>

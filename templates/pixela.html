@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "/static/pixela.css">
+    <title>HIIT TIMER</title>
+    
+
+</head>
+
+<body>
+    <div id="leftnav">
+        <div id="leftnav_top">
+            <div id="ccc">
+            <div class="leftcontent">    
+            <a href="overview"><i class="fa-solid fa-house"></i> Overview</a>
+            </div>
+            <div class="leftcontent">
+        <a href="timer"><i class="fa-solid fa-clock"></i> Timer</a>
+        </div>
+        <div class="leftcontent">
+        <a href="#"><i class="fa-solid fa-chart-area"></i> Detailed</a>
+        </div>
+        </div>
+
+        </div>
+        <div id="leftnav_bottom">
+            <div id="logout">
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="rightBody">
+        <div id="graph_top">
+            <div id='distance_graph' class='_graphs'></div>
+            <div id='steps_graph' class='_graphs'></div>
+        </div>
+      <div id="graph_bottom">        
+        <div id='heart_graphs' class='_graphs'></div>
+      <div id='kal_graphs' class='_graphs'></div>
+    </div>
+
+    </div>
+
+
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var distance_graphs = {{graphJSON[0] | safe}};
+  var steps_graphs = {{graphJSON[1] | safe}};
+  var heart_graphs = {{graphJSON[2] | safe}};
+  var kal_graphs = {{graphJSON[3] | safe}};
+
+  const config = {
+  displayModeBar: false, 
+};
+
+
+
+  Plotly.plot('distance_graph',distance_graphs,{},config);
+  Plotly.plot('steps_graph',steps_graphs,{},config);
+  Plotly.plot('heart_graphs',heart_graphs,{},config);
+  Plotly.plot('kal_graphs',kal_graphs,{},config);
+
+
+</script>
+</html>

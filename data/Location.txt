@@ -1,0 +1,1 @@
+{"minStartTimeNs": "1688927400000000000", "maxEndTimeNs": "1691578812000000000", "dataSourceId": "derived:com.google.location.sample:com.google.android.gms:merge_location_samples", "point": []}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "/static/timer.css">
+    <title>HIIT TIMER</title>
+    
+
+</head>
+
+<body>
+    <div id="leftnav">
+        <div id="leftnav_top">
+            <div id="ccc">
+            <div class="leftcontent">    
+            <a href="overview"><i class="fa-solid fa-house"></i> Overview</a>
+            </div>
+            <div class="leftcontent">
+        <a href="#"><i class="fa-solid fa-clock"></i> Timer</a>
+        </div>
+        <div class="leftcontent">
+        <a href="detailed"><i class="fa-solid fa-chart-area"></i> Distances</a>
+        </div>
+      
+        </div>
+
+        </div>
+        <div id="leftnav_bottom">
+            <div id="logout">
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="rightBody">
+        <div class="container">
+            <form action="" id="set">
+              <div class="section">
+                  <div class="center">
+                      <label>Rest </label>
+                      <div class="input"><button onclick="changeQty('rest','minus'); return false;">-</button><input type="text" id="rest" value="5" readonly><button onclick="changeQty('rest','plus'); return false;">+</button></div>
+                  </div>
+                </div>
+              <div class="section">
+                  <div class="center">
+                      <label>Reps </label>
+                      <div class="input"><button onclick="changeQty('workout','minus'); return false;">-</button><input type="text" id="workout" value="5" readonly><button onclick="changeQty('workout','plus'); return false;">+</button></div>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="center">
+                      <label>Times </label>
+                      <div class="input"><button onclick="changeQty('intervals','minus'); return false;">-</button><input type="text" id="intervals" value="2" readonly><button onclick="changeQty('intervals','plus'); return false;">+</button></div>
+                  </div>
+              </div>
+              <div class="buttons"><button id="start">start</button></div>
+            </form>
+        
+            <div id="run">
+                <div class="chart" id="graph" data-percent="1" data-line="5" data-color="#34495e"></div>
+                <div id="title"></div>
+                <div id="timer"></div>
+                <div id="buttons">
+                    <button id="stop">Stop</button>
+                </div>
+            </div>
+        </div>
+    <div id="music_player">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3M2LeGpESC5bWeYklMGtgk?utm_source=generator&theme=0" width="100%" height="792" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+        
+
+
+    </div>
+    <script src="/static/timer.js">
+        
+    </script>
+
+</body>
+</html>
